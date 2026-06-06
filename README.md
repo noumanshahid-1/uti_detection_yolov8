@@ -1,6 +1,18 @@
 # UTI Detection YOLOv8
 
-Portfolio-ready Flutter app for urinary tract infection screening from microscopy-style images. The app accepts an image, runs an on-device YOLOv8 TensorFlow Lite detector, counts detected pus cells, and reports whether the sample crosses the infection threshold.
+![Flutter](https://img.shields.io/badge/Flutter-Mobile%20App-02569B?style=for-the-badge&logo=flutter)
+![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?style=for-the-badge&logo=dart)
+![YOLOv8](https://img.shields.io/badge/YOLOv8-Object%20Detection-111827?style=for-the-badge)
+![TensorFlow Lite](https://img.shields.io/badge/TensorFlow%20Lite-On--Device%20AI-FF6F00?style=for-the-badge&logo=tensorflow)
+![Status](https://img.shields.io/badge/Status-Research%20Prototype-facc15?style=for-the-badge)
+
+An AI-powered Flutter application for **urinary tract infection screening** from microscopy-style sample images.
+
+The application performs on-device YOLOv8 TensorFlow Lite object detection, identifies pus-cell regions, applies non-maximum suppression, generates an annotated prediction image, counts detected pus cells, and reports an infection screening result using a simple count threshold inside a modern portfolio mobile interface.
+
+> **Research Use Only:** This project is intended for educational and research screening demonstrations. It is not intended for clinical diagnosis, treatment planning, laboratory decision-making, or replacement of expert medical review.
+
+---
 
 ## Preview
 
