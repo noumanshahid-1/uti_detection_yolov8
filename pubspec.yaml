@@ -1,0 +1,80 @@
+#name: uti_detection
+#description: "A new Flutter project for UTI detection."
+#
+#publish_to: 'none'
+#
+#version: 1.0.0+1
+#
+#environment:
+#  sdk: '>=3.0.0 <4.0.0' # Adjust based on your Flutter SDK version
+#
+#dependencies:
+#  flutter:
+#    sdk: flutter
+#  cupertino_icons: ^1.0.8
+#  image_picker: ^1.1.2 # For picking images from gallery/camera
+#  tflite_flutter: ^0.11.0 # UPDATED: For TensorFlow Lite model integration
+#  image: ^4.1.7 # For image processing
+#  path_provider: ^2.1.3 # For accessing temporary directories to save images
+#
+#dev_dependencies:
+#  flutter_test:
+#    sdk: flutter
+#  flutter_lints: ^3.0.0
+#
+#flutter:
+#  uses-material-design: true
+#
+#  assets:
+#    - assets/images/uti.png # Make sure you have this image in your assets/images folder
+#    - assets/models/best_float16.tflite # Your YOLOv8 model file
+#    - assets/predicted/ # Directory for predicted images (if you save them)
+#
+#  # Custom fonts (if any)
+#  # fonts:
+#  #   - family: Inter
+#  #     fonts:
+#  #       - asset: assets/fonts/Inter-Regular.ttf
+#  #       - asset: assets/fonts/Inter-Bold.ttf
+#  #         weight: 700
+#------------------------------------------------------------------------------------------
+name: uti_detection
+description: "A new Flutter project for UTI detection."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0' # Adjust based on your Flutter SDK version
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  image_picker: ^1.1.2 # For picking images from gallery/camera
+  tflite_flutter: ^0.11.0 # UPDATED: For TensorFlow Lite model integration
+  image: ^4.1.7 # For image processing
+  path_provider: ^2.1.3 # For accessing temporary directories to save images
+  collection: ^1.18.0 # NEW: For list utilities, useful for NMS (though we'll do a simple one)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/uti.png # Make sure you have this image in your assets/images folder
+    - assets/models/best_float16.tflite # Your YOLOv8 model file
+    - assets/predicted/ # Directory for predicted images (if you save them)
+
+  # Custom fonts (if any)
+  # fonts:
+  #   - family: Inter
+  #     fonts:
+  #       - asset: assets/fonts/Inter-Regular.ttf
+  #       - asset: assets/fonts/Inter-Bold.ttf
+  #         weight: 700
